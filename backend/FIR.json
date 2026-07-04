@@ -1,0 +1,26 @@
+[
+  {
+    "firNumber": "FIR-708486",
+    "registrationDateTime": "2026-07-01T19:42:33.004Z",
+    "userId": "6a3590c61d3229652e5172d0",
+    "complainantDetails": {
+      "fullName": "Bhanu",
+      "age": 20,
+      "occupation": "software intern",
+      "permanentAddress": "1-5-431/4/1, Lane Number 8, Sri Ganesh Enclave Johna Bonda, Old Alwal Secunderabad, 500010 Telangana India",
+      "temporaryAddress": "1-5-431/4/1, Lane Number 8, Sri Ganesh Enclave Johna Bonda, Old Alwal Secunderabad, 500010 Telangana India",
+      "contactNumber": "8309649014"
+    },
+    "firDetails": {
+      "incidentNarrative": "abc",
+      "incidentDate": "2026-07-01",
+      "incidentTime": "2:11 AM",
+      "incidentLocation": "1-5-431/4/1, Lane Number 8, Sri Ganesh Enclave Johna Bonda, Old Alwal Secunderabad, 500010 Telangana India",
+      "crimeDescription": "ABC",
+      "motives": "ABCD",
+      "propertyStolen": "ABCDEFGH",
+      "weaponsUsed": "knife"
+    },
+    "specificLaws": "Bharatiya Nyaya Sanhita (BNS) Section 303 / IPC Section 379"
+  }
+]

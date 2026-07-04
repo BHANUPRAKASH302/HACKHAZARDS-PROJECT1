@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  # MySQL database (used for MAB tracking)
+  mysql:
+    image: mysql:8.0
+    container_name: vynedam-mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: vynedam_db
+      MYSQL_USER: vynedam_user
+      MYSQL_PASSWORD: vynedam_password
+      MYSQL_ROOT_PASSWORD: vynedam_root_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  # Redis instance (used for caching and BullMQ)
+  redis:
+    image: redis:7-alpine
+    container_name: vynedam-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  # MongoDB local instance (fallback/alternative to MongoDB Atlas)
+  mongodb:
+    image: mongo:6.0
+    container_name: vynedam-mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  # MinIO (local object storage for images/files, S3-compatible)
+  minio:
+    image: minio/minio
+    container_name: vynedam-minio
+    restart: always
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+
+  # Jaeger (for OpenTelemetry tracing dashboard)
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: vynedam-jaeger
+    restart: always
+    ports:
+      - "16686:16686" # Web UI
+      - "4317:4317"   # OTLP gRPC port
+      - "4318:4318"   # OTLP HTTP port
+
+volumes:
+  mysql_data:
+  redis_data:
+  mongo_data:
+  minio_data:

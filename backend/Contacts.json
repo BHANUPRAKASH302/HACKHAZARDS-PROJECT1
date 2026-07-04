@@ -1,0 +1,25 @@
+[
+  {
+    "userId": "6a3590c61d3229652e5172d0",
+    "contacts": [
+      {
+        "id": "1782703770553",
+        "name": "Bhanu",
+        "phone": "8309649014",
+        "relation": "Friend"
+      },
+      {
+        "id": "1782703807553",
+        "name": "Hansika",
+        "phone": "9985469699",
+        "relation": "Work"
+      },
+      {
+        "id": "1782703846436",
+        "name": "Jasmitha",
+        "phone": "9177264845",
+        "relation": "Neighbor"
+      }
+    ]
+  }
+]
