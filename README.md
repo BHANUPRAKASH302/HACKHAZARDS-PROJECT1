@@ -7,4 +7,3 @@ The platform leverages Artificial Intelligence to understand user queries, retri
 By combining advanced AI technologies, smart knowledge retrieval, and user-friendly design, the application aims to bridge the gap between information and accessibility, making expert guidance available to everyone, anytime and anywhere.
 
 Our vision is to create a unified AI-powered ecosystem that empowers individuals, improves decision-making, and enhances the quality of life across diverse domains.
-# Vynedam_Hackthon
