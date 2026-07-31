@@ -1,4 +1,4 @@
-## Vynedam_Hackthon
+## HACKHAZARDS-PROJECT1
 
 Multi-Domain AI Assistance Platform is an intelligent mobile application designed to provide instant, reliable, and personalized assistance across multiple sectors through a single platform. Instead of using separate applications for education, healthcare, agriculture, legal guidance, and safety services, users can access all essential support in one place.
 
